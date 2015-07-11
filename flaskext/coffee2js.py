@@ -22,7 +22,7 @@ def _convert(src, dst):
     outfile.write(output)
     outfile.close()
 
-    print 'compiled "%s" into "%s"' % (src, dst)
+    print('compiled "%s" into "%s"' % (src, dst))
 
 def coffee2js(app, js_folder='js', coffee_folder='src/coffee', force=False):
     if not hasattr(app, 'static_url_path'):
